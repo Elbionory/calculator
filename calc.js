@@ -66,10 +66,6 @@ equal.addEventListener("click", () => {
 });
 
 ANS.addEventListener("click", () => {
-  let lastOperator= previousCalc.innerText[previousCalc.innerText.length-1]
-  console.log(lastOperator)
-  if(lastOperator=="+"||lastOperator=="-"||lastOperator=="*"||lastOperator=="/"){
   previousCalc.innerText += ans;
   currentCalc.innerText = "";
-  }
 });
